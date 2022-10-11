@@ -8,13 +8,13 @@ const App = () => {
     <div className='App'>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Website />} />
-          <Route path='admin' element={<Admin />} />
-          <Route path='*' element={<Website />} />
+            <Route path='/' element={<Website />} />
+            <Route path='/admin' element={<Admin />} />
+            <Route path='*' element={<Website />} />
         </Routes>
       </BrowserRouter>
     </div>
   );
-};
+}
 
 export default App;
