@@ -1,0 +1,12 @@
+@import './../../assets/colors.scss';
+
+.header-container {
+    .header {
+        background: $blackLight;
+
+        h1 {
+            color: $white;
+            font-size: 14px;
+        }
+    }
+}
