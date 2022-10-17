@@ -1,10 +1,17 @@
 import './Slider.scss';
+import Context from '../../context/App.context';
+import { useContext } from 'react';
 
 const Slider = () => {
+    const context = useContext(Context);
+    const {sliderState, sliderText} = context;
+
     return (
-        <div className='slider-container'>
-            <p>Slider</p>
-        </div>
+        <>
+            {sliderState && <div className='slider-container'>
+                <p>{sliderText ? sliderText : 'Slider'}</p>
+            </div>}
+        </>
     )
 };
 

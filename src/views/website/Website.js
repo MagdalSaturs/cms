@@ -3,6 +3,7 @@ import Slider from '../../components/slider';
 import Articles from '../../components/articles';
 import Footer from '../../components/footer';
 
+
 const Website = () => {
     return (
         <div>
