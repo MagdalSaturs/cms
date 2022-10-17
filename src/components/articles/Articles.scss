@@ -1,0 +1,8 @@
+@import './../../assets/colors';
+
+.articles-container {
+    height: 200px;
+    background: $articlesBg;
+    padding: 20px;
+    color: $white;
+}

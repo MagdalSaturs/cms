@@ -1,9 +1,15 @@
 import Header from '../../components/header';
+import Slider from '../../components/slider';
+import Articles from '../../components/articles';
+import Footer from '../../components/footer';
 
 const Website = () => {
     return (
         <div>
             <Header title={'Website'} />
+            <Slider />
+            <Articles />
+            <Footer />
         </div>
     )
 }
