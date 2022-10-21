@@ -12,6 +12,8 @@ const App = () => {
   const [sliderImage, setSliderImage] = useState('');
   const [articlesState, setArticlesState] = useState(true);
   const [articlesMainImage, setArticlesMainImage] = useState('');
+  const [articlesMainImage_2, setArticlesMainImage_2] = useState('');
+  const [articlesMainImage_3, setArticlesMainImage_3] = useState('');
   const [footerState, setFooterState] = useState(true);
   const [footerPhone, setFooterPhone] = useState('');
   const [footerMadeBy, setFooterMadeBy] = useState('');
@@ -28,6 +30,10 @@ const App = () => {
                         setArticlesState,
                         articlesMainImage,
                         setArticlesMainImage,
+                        articlesMainImage_2,
+                        setArticlesMainImage_2,
+                        articlesMainImage_3,
+                        setArticlesMainImage_3,
                         footerState,
                         setFooterState,
                         footerPhone,

@@ -14,6 +14,10 @@ const Panel = () => {
             setArticlesState,
             articlesMainImage,
             setArticlesMainImage,
+            articlesMainImage_2,
+            setArticlesMainImage_2,
+            articlesMainImage_3,
+            setArticlesMainImage_3,
             footerState,
             setFooterState,
             footerPhone,
@@ -48,9 +52,19 @@ const Panel = () => {
     const setArticlesMainImageHandler = (e) => {
         const image = e.target.value;
 
-        console.log(image)
-
         setArticlesMainImage(image);
+    };
+
+    const setArticlesMainImage_2Handler = (e) => {
+        const image = e.target.value;
+
+        setArticlesMainImage_2(image);
+    };
+
+    const setArticlesMainImage_3Handler = (e) => {
+        const image = e.target.value;
+
+        setArticlesMainImage_3(image);
     };
 
     const setFooterPhoneHandler = (e) => {
@@ -86,9 +100,9 @@ const Panel = () => {
                 <li>
                     <p>Slider image</p>
                     <input type='link'
-                                defaultValue={sliderImage}
-                                onChange={(e) => setSliderImageHandler(e)}
-                                placeholder='Type link to the photo...'/>
+                            defaultValue={sliderImage}
+                            onChange={(e) => setSliderImageHandler(e)}
+                            placeholder='Type link to the photo...'/>
                 </li>
                 <li>
                     <p>Articles</p>
@@ -98,11 +112,25 @@ const Panel = () => {
                             onChange={setArticlesStateHandler}/>
                 </li>
                 <li>
-                    <p>Main article</p>
+                    <p>First article</p>
                     <input type='link' 
-                                defaultValue={articlesMainImage}
-                                onChange={(e) => setArticlesMainImageHandler(e)}
-                                placeholder='Typy link to the main article...'/>
+                            defaultValue={articlesMainImage}
+                            onChange={(e) => setArticlesMainImageHandler(e)}
+                            placeholder='Typy link to the main article...'/>
+                </li>
+                <li>
+                    <p>Second article</p>
+                    <input type='link'
+                            defaultValue={articlesMainImage_2}
+                            onChange={(e) => setArticlesMainImage_2Handler(e)}
+                            placeholder='Type link to the second article...'/>
+                </li>
+                <li>
+                    <p>Third article</p>
+                    <input type='link'
+                            defaultValue={articlesMainImage_3}
+                            onChange={(e) => setArticlesMainImage_3Handler(e)}
+                            placeholder='Type link to the third article...'/>
                 </li>
                 <li>
                     <p>Footer</p>
@@ -114,16 +142,16 @@ const Panel = () => {
                 <li>
                     <p>Phone number</p>
                     <input type='phone'
-                                defaultValue={footerPhone}
-                                onChange={(e) => setFooterPhoneHandler(e)}
-                                placeholder='Type phone number...'/>
+                            defaultValue={footerPhone}
+                            onChange={(e) => setFooterPhoneHandler(e)}
+                            placeholder='Type phone number...'/>
                 </li>
                 <li>
                     <p>Made by</p>
                     <input type='text' 
-                                defaultValue={footerMadeBy}
-                                onChange={(e) => setFooterMadeByHandler(e)}
-                                placeholder='Made by...'/>
+                            defaultValue={footerMadeBy}
+                            onChange={(e) => setFooterMadeByHandler(e)}
+                            placeholder='Made by...'/>
                 </li>
             </ul>
         </div>

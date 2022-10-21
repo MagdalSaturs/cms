@@ -10,7 +10,7 @@ const Footer = () => {
         <>
             {footerState && <div className='footer-container'>
                 <p>Footer</p>
-                <p><a href={footerPhone ? footerPhone : 'tel:+48575129080'}>{footerPhone ? footerPhone : '+48 575 129 080'}</a></p>
+                <p>Number: <a href={footerPhone ? footerPhone : 'tel:+48575129080'}>{footerPhone ? footerPhone : '+48 575 129 080'}</a></p>
                 <p>Made by: {footerMadeBy ? footerMadeBy : 'Magda'}</p>
             </div>}
         </>

@@ -10,7 +10,7 @@ const Slider = () => {
         <>
             {sliderState && <div className='slider-container'>
                 <p>{sliderText ? sliderText : 'Slider'}</p>
-                <img src={sliderImage ? sliderImage : 'https://tueuropa.pl/uploads/articles_files/2021/11/05/6e7f9516-1948-d9e8-ca22-00007380aca5.jpg'} height='50%' alt='wrong link'></img>
+                <img src={sliderImage ? sliderImage : 'https://zooart.com.pl/blog/wp-content/uploads/2020/11/sfinks-kot-4-min.jpg'} height='50%' alt='wrong link'></img>
             </div>}
         </>
     )
