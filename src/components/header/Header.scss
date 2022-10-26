@@ -1,11 +1,14 @@
 @import './../../assets/colors';
 
 .header-container {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxEiI10HgF9vihJwNdiDshrRwgG75x6iDsQ&usqp=CAU');
     .header {
         background: $blackLight;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 75%;
+        border-radius:10px;
 
         h1 {
             color: $white;
@@ -15,10 +18,22 @@
     .btn {
         &--admin {
             background: $btnAdmin;
+            color: $black;
 
             &:hover {
                 background: $btnAdminHover;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 588) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 75%;
+        border-radius: 10px;
     }
 }

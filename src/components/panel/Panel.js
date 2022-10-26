@@ -6,12 +6,22 @@ const Panel = () => {
     const context = useContext(Context);
     const {sliderState,
             setSliderState,
+            sliderInsideText,
+            setSliderInsideText,
             sliderText,
             setSliderText,
             sliderImage,
             setSliderImage,
+            sliderImage_2,
+            setSliderImage_2,
+            sliderImage_3,
+            setSliderImage_3,
             articlesState,
             setArticlesState,
+            articlesTopic,
+            setArticlesTopic,
+            articlesText,
+            setArticlesText,
             articlesMainImage,
             setArticlesMainImage,
             articlesMainImage_2,
@@ -43,10 +53,40 @@ const Panel = () => {
         setSliderText(text);
     };
 
+    const setSliderInsideTextHandler = (e) => {
+        const text = e.target.value;
+
+        setSliderInsideText(text);
+    };
+
     const setSliderImageHandler = (e) => {
         const image = e.target.value;
 
         setSliderImage(image);
+    };
+
+    const setSliderImage2Handler = (e) => {
+        const image = e.target.value;
+
+        setSliderImage_2(image);
+    };
+
+    const setSliderImage3Handler = (e) => {
+        const image = e.target.value;
+
+        setSliderImage_3(image);
+    };
+
+    const setArticlesTopicHandler = (e) => {
+        const topic = e.target.value;
+
+        setArticlesTopic(topic);
+    };
+
+    const setArticlesTextHandler = (e) => {
+        const text = e.target.value;
+
+        setArticlesText(text);
     };
 
     const setArticlesMainImageHandler = (e) => {
@@ -98,10 +138,31 @@ const Panel = () => {
                             placeholder='Type text...'/>
                 </li>
                 <li>
+                    <p>Slider inside text</p>
+                    <input type='text'
+                            defaultValue={sliderInsideText}
+                            onChange={(e) => setSliderInsideTextHandler(e)}
+                            placeholder='Type text...'/>
+                </li>
+                <li>
                     <p>Slider image</p>
                     <input type='link'
                             defaultValue={sliderImage}
                             onChange={(e) => setSliderImageHandler(e)}
+                            placeholder='Type link to the photo...'/>
+                </li>
+                <li>
+                    <p>Slider image 2</p>
+                    <input type='link'
+                            defaultValue={sliderImage_2}
+                            onChange={(e) => setSliderImage2Handler(e)}
+                            placeholder='Type link to the photo...'/>
+                </li>
+                <li>
+                    <p>Slider image 3</p>
+                    <input type='link'
+                            defaultValue={sliderImage_3}
+                            onChange={(e) => setSliderImage3Handler(e)}
                             placeholder='Type link to the photo...'/>
                 </li>
                 <li>
@@ -110,6 +171,20 @@ const Panel = () => {
                             defaultChecked={articlesState}
                             onClick={setArticlesStateHandler}
                             onChange={setArticlesStateHandler}/>
+                </li>
+                <li>
+                    <p>Topic</p>
+                    <input type='text'
+                            defaultValue={articlesTopic}
+                            onChange={(e) => setArticlesTopicHandler(e)}
+                            placeholder='Type topic...'/>
+                </li>
+                <li>
+                    <p>Text inside</p>
+                    <input type='text'
+                            defaultValue={articlesText}
+                            onChange={(e) => setArticlesTextHandler(e)}
+                            placeholder='Type text...'/>
                 </li>
                 <li>
                     <p>First article</p>
