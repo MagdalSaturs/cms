@@ -1,0 +1,95 @@
+@import '../../../assets/colors.scss';
+
+.shortcut {
+    text-align: center;
+    background: $history-background;
+    border-radius: 20px;
+
+    h1 {
+        color: $white;
+        background: $h1-background;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    h2 {
+        color: $white;
+        background: $h2-background;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    h3 {
+        color: $white;
+        background: $h3-background;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    p {
+        color: $white;
+        border-radius: 20px;
+    }
+
+    li{
+        color: $black;
+        border-radius: 20px;
+    }
+}
+
+.all {
+    text-align: center;
+    background: $history-background;
+    border-radius: 20px;
+
+    h1 {
+        color: $white;
+        background: $h1-background;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    h2 {
+        color: $white;
+        background: $h2-background;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    h3 {
+        color: $white;
+        background: $h3-background;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    p {
+        color: $white;
+        border-radius: 20px;
+    }
+
+    li{
+        color: $black;
+        border-radius: 20px;
+    }
+}
+
+.images {
+    text-align: center;
+    background: $history-background;
+    border-radius: 20px;
+
+    img{
+        box-shadow: 0 0 10px 0 $black;
+    }
+
+    p {
+        color: $white;
+        border-radius: 20px;
+    }
+
+    li{
+        color: $black;
+        border-radius: 20px;
+    }
+}

@@ -1,8 +1,8 @@
-import './Header.scss';
+import './BiologyHeader.scss';
 import { Link } from 'react-router-dom';
 
 const Header = (props) => {
-    const isWebsite = (props.title).toUpperCase() === 'ADMIN'
+    const isWebsite = (props.title).toUpperCase() === 'BIOLOGY 2'
     const isMain = (props.title).toUpperCase() === 'MAIN'
 
     return (
@@ -11,12 +11,12 @@ const Header = (props) => {
                 <h1>{props.title}</h1>
                 {isWebsite
                 ? <Link className='btn'
-                        to='/biologia'>Powrót</Link>
+                        to='/biologia/list'>Powrót</Link>
                 : <Link className='btn btn--admin'
                         to='/admin'>Admin panel | B</Link>}
                 {isMain
                 ? <Link className='btn'
-                        to='/biologia/list'>Biologia</Link>
+                        to='/biologia'>Biologia</Link>
                 : <Link className='btn btn--main'
                         to='/main'>Main</Link>}
                 {isMain && <Link className='btn btn--history' to='/history/list'>Historia</Link>}

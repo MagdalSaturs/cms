@@ -1,0 +1,21 @@
+@import '../../../assets/colors.scss';
+
+.list-container {
+    background-color: plum;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    height: 100px;
+
+    .slider-container__link {
+        background-color: $history-color;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        padding: 7px;
+        width: 200px;
+        margin: 10px;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../assets/colors.scss';
+
+.mainLinks-container {
+    background-color: plum;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    height: 300px;
+
+    a {
+        background-color: $lessons-color;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        padding: 7px;
+        width: 200px;
+        margin: 10px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 41%;
+
+        &:hover {
+            background-color: $btnAdminHover;
+        }
+    }
+}
